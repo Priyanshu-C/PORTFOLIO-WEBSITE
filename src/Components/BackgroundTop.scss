@@ -1,0 +1,82 @@
+.backgroundUp {
+    //   transform: scale(0.8);
+    //   position: absolute;
+    //   top:0;
+    //   right: 0;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        transform: scale(0.6) translateY(-168vh) translateX(35vw);
+    }
+    @media only screen and (min-width: 500px) and (max-width: 768px) {
+        transform: scale(0.5) translateY(-200vh) translateX(55vw);
+    }
+    @media only screen and (max-width: 500px) {
+        transform: scale(0.35) translateY(-285vh) translateX(100vw);
+    }
+}
+
+.shapeTop {
+    position: absolute;
+    font-size: 16px;
+}
+.shapeTop:nth-child(1) {
+    top: -6em;
+    right: -7em;
+}
+.shapeTop:nth-child(2) {
+    top: -10em;
+    right: 10.5em;
+}
+.shapeTop:nth-child(3) {
+    top: 0em;
+    right: 16em;
+    z-index: 2;
+}
+.shapeTop:nth-child(4) {
+    top: -2.5em;
+    right: -7.5em;
+    z-index: 2;
+}
+.shapeTop:nth-child(5) {
+    top: -3em;
+    right: 10.5em;
+    z-index: 2;
+}
+.shapeTop:nth-child(6) {
+    top: 7em;
+    right: -12.5em;
+    z-index: 1;
+}
+.shapeTop:nth-child(7) {
+    top: -9em;
+    right: -15em;
+    z-index: 1;
+}
+.shapeTop:nth-child(8) {
+    top: -8em;
+    right: 11em;
+    z-index: 2;
+}
+.shapeTop:nth-child(9) {
+    top: 2em;
+    right: 25em;
+}
+.shapeTop:nth-child(10) {
+    top: 0em;
+    right: 44em;
+}
+.shapeTop:nth-child(11) {
+    top: 10em;
+    right: 20em;
+}
+.shapeTop:nth-child(12) {
+    top: -1em;
+    right: 55em;
+}
+.shapeTop:nth-child(13) {
+    top: -2em;
+    right: 50em;
+}
+.shapeTop:nth-child(14) {
+    top: 24em;
+    right: -3em;
+}

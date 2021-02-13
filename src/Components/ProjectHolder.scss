@@ -1,0 +1,108 @@
+$logosize: 5rem;
+$colorchooser: rgba(0, 225, 255, 0.63);
+.ProjectCardAndLogo {
+    margin: 1rem;
+    width: 25rem;
+    height: 18rem;
+    @media only screen and (max-width: 500px) {
+        width: 22rem;
+        height: 16rem;
+        margin: 2rem;
+    }
+}
+.ProjectCardAndLogo:last-child {
+    margin-bottom: 4rem;
+}
+
+.ProjectCard {
+    z-index: 5;
+    width: 100%;
+    height: 75%;
+    background: rgba(106, 103, 112, 0.404);
+    box-shadow: 0 8px 32px 0 rgba(8, 9, 24, 0.37);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    transition: all 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow: hidden;
+    position: relative;
+    &__front {
+        position: absolute;
+        justify-content: center;
+        z-index: -1;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        &__logo {
+            display: flex;
+            justify-content: center;
+            margin: 0.5rem;
+        }
+
+        &__name {
+            display: flex;
+            font-size: 3rem;
+            font-family: "Ubuntu";
+            color: white;
+        }
+    }
+    
+
+    &__hidden {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s;
+        background: rgba(255, 255, 255, 0.473);
+        // backdrop-filter: blur(20px);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        &__git {
+            font-size: $logosize;
+        }
+        &__view {
+            font-size: $logosize;
+        }
+        &__icon {
+            transition: all 0.2s;
+            color: black;
+        }
+        &__icon:hover {
+            color: white;
+            transform: scale(1.1);
+        }
+        &__icon:active {
+            transform: scale(1);
+        }
+    }
+
+    
+    &__hidden:hover + div {
+        filter: blur(15px);
+        user-select: none;
+    }
+    &__hidden:hover {
+        opacity: 1;
+    }
+}
+.ProjectCardLogo {
+    z-index: 4;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    &-logo {
+        margin: 0.5rem 0.5rem 0 0.5rem;
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+#buckito {
+    background: rgba(176, 78, 206, 0.2);
+    font-family: "Courier New", Courier, monospace;
+}

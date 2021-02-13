@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 8;
+    position: absolute;
+    color: white;
+    height: 20vh;
+    flex-wrap: wrap;
+}
+.navbar-titles{
+    flex: 0 0 100%;
+}

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Full-container {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+.mainPage {
+    height: 100vh;
+    width: 100vw;
+
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    // &__circle-1 {
+    //     height: 170vh;
+    //     width: 170vh;
+    //     border-radius: 50%;
+    //     background: #c4c4c4;
+    //     position: absolute;
+    //     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    //         rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    // }
+    // &__circle-2 {
+    //     height: 160vh;
+    //     width: 160vh;
+    //     border-radius: 50%;
+    //     background: #10ffd4;
+    //     position: absolute;
+    //     box-shadow: rgba(0, 0, 0, 0.753) 0px 10px 20px,
+    //         rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    // }
+    // &__circle-3 {
+    //     height: 150vh;
+    //     width: 150vh;
+    //     border-radius: 50%;
+    //     background: #474747;
+    //     position: absolute;
+    //     box-shadow: rgba(0, 0, 0, 0.753) 0px 10px 20px,
+    //         rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    //     // box-shadow: rgba(255, 255, 255, 0.801) 0px 7px 29px 0px;
+    // }
+
+    &__info {
+        text-align: center;
+        font-family: "Abel";
+        color: white;
+        font-size: 3rem;
+        font-weight: 100;
+        align-self: center;
+        position: absolute;
+        @media only screen and (min-width: 500px) and (max-width: 768px) {
+            margin-top: 40%;
+            align-self: flex-start;
+        }
+        @media only screen and (max-width: 500px) {
+            width: 80%;
+            margin-top: 50%;
+            align-self: flex-start;
+        }
+    }
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    flex-wrap: wrap;
+    transform: translateX(-5rem);
+    @media only screen and (max-width: 500px) {
+        transform: translateX(-5rem) translateY(10rem);
+    }
+}
+.navbar-titles {
+    font-size: 2rem;
+    font-family: "Abel";
+    margin: 1rem 0 1rem 5rem;
+    transition: all 0.2s;
+    user-select: none;
+}
+.navbar-titles:hover {
+    font-size: 2.2rem;
+}
+.cyan {
+    color: #10ffd4;
+}
+.line {
+    display: inline-block;
+    transform: translateY(-0.5rem);
+    width: 4rem;
+    height: 5px;
+    background-color: white;
+    color: white;
+    border-radius: 2px;
+}
